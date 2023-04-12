@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main,
+section {
+  display: flex;
+}
+
+main {
+  flex-direction: column;
+}
+
+section {
+  justify-content: center;
+  gap: 6rem;
+  height: 40rem;
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 10% 5% 4% 28%;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+ul,
+form {
+  margin-top: 2rem;
+}
+
+input,
+button,
+ul {
+  border: 2px solid black;
+}
+
+input {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+li,
+input {
+  padding: 0.5rem;
+}
+
+li,
+input,
+input::placeholder,
+button {
+  color: #000;
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+ul > li:nth-child(even) {
+  background-color: rgb(223, 223, 223);
+}
+
+button {
+  background: none;
+  padding: 0.5rem 1rem;
+  box-shadow: 3px 3px 1px #000;
+}
+
+.recent-scores {
+  width: 20%;
+}
+
+.recent-scores > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
