@@ -84,7 +84,7 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Send and receive data from an API.
+- Improve application styling.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
