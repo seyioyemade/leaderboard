@@ -1,22 +1,12 @@
 import './style.css';
-/*eslint-disable*/ 
-import { getJSONData, postData } from './modules/get-post-data.js';
+import { api, getJSONData, postData } from './modules/get-post-data.js';
+import { display } from './modules/display.js';
 
-export const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/3Y74LzLKCnfghIcTzPAQ/scores/';
 const user = document.querySelector('#user');
 const score = document.querySelector('#score');
 const form = document.querySelector('form');
-const ul = document.querySelector('ul');
+
 const refreshBtn = document.querySelector('#refresh');
-
-export const display = (user, score) => {
-  const li = `<li>${user}: ${score}</li>`;
-  ul.innerHTML += li;
-};
-
-export const refreshDom = () => {
-  ul.innerHTML = '';
-};
 
 refreshBtn.addEventListener('click', getJSONData);
 

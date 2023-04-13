@@ -1,5 +1,6 @@
-/*eslint-disable*/ 
-import { refreshDom, display, api } from '../index.js';
+import { display, refreshDom } from './display.js';
+
+export const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/3Y74LzLKCnfghIcTzPAQ/scores/';
 
 export const getJSONData = async () => {
   refreshDom();
