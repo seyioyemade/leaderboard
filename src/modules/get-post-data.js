@@ -1,3 +1,4 @@
+/*eslint-disable*/ 
 import { refreshDom, display, api } from '../index.js';
 
 export const getJSONData = async () => {
@@ -8,5 +9,15 @@ export const getJSONData = async () => {
   jsonData.result.forEach((item) => {
     display(item.user, item.score);
   });
-  
-}
+};
+
+export const postData = async (url = '', data = {}) => {
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+  return response.json();
+};
