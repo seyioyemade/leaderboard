@@ -28,6 +28,11 @@ section {
   height: 40rem;
 }
 
+h1,
+h2 {
+  color: #c00;
+}
+
 h1 {
   font-size: 4rem;
   padding: 10% 5% 4% 28%;
@@ -80,14 +85,16 @@ ul > li:nth-child(even) {
 }
 
 button {
-  background: none;
+  background: #c00;
   padding: 0.5rem 1rem;
   box-shadow: 3px 3px 1px #000;
   cursor: pointer;
+  color: white;
 }
 
 button:hover {
   background-color: rgb(226, 226, 226);
+  color: #c00;
 }
 
 .recent-scores {
